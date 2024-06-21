@@ -1,0 +1,78 @@
+.nav-button {
+    button {
+        @include clear-button;
+        }
+
+    &__search {
+        img {
+            width: 17px;
+            height: 16px;
+        }
+
+        @media (min-width: 768px) {
+            img {
+                width: 29px;
+                height: 27px;
+            }
+        }
+    }
+
+    &__cart {
+        position: relative;
+
+        img {
+            width: 17px;
+            height: 16px;
+        }
+
+        @media (min-width: 768px) {
+            img {
+                width: 29px;
+                height: 27px;
+            }
+        }
+    }
+
+    &__ellipse-cart {
+        position: absolute;
+        top: -6px;
+        right: -6px;
+
+        img {
+            width: 18px;
+            height: 18px;
+        }
+        
+        @media (max-width: 768px) {
+            img {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+    
+    &__burger {
+        @media (min-width: 768px) {
+            display: none;
+        }
+
+        img {
+        width: 16px;
+        height: 11px;
+        display: block;
+        }
+    }
+    
+    &__close{
+        display: none;
+
+        &--showed {
+        display: block;
+        }
+        
+        img {
+            width: 12px;
+            height: 12px;
+        }
+    }
+}
