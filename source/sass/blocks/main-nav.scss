@@ -5,6 +5,7 @@
         display: flex;
         align-items: center;
         margin-top: 15px;
+        justify-content: space-between;
 
         @media (min-width: 768px) and (max-width: 1280px) {
             margin-top: 20px;
@@ -20,33 +21,33 @@
         img {
             width: 94px;
             height: 32px;
-            }
-        
+        }
+
         @media (max-width: 768px) {
             img {
                 width: 75px;
                 height: 25px;
-                }
+            }
         }
-        @media (min-width: 1280px) {
-        }
+
+        @media (min-width: 1280px) {}
     }
 
     &__list {
         @include clear-list;
         display: none;
-        
+
         &--showed {
             display: block;
         }
-        
+
         @media (min-width:768px) {
             display: flex;
             gap: 25px;
             margin-left: auto;
             margin-right: auto;
         }
-        
+
     }
 
     &__item {
@@ -61,7 +62,6 @@
     }
 
     &__nav-button {
-        margin-left: auto;
         display: flex;
         justify-content: space-between;
         width: 115px;
