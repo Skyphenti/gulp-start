@@ -8,46 +8,61 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <nav class="main-nav">
+    <header class="main-nav">
         <div class="container main-nav__container">
-            <a class="main-nav__logo">
+            <a class="main-nav__logo" href="#">
                 <img src="img/logo.svg" alt="Логотип компании Slick">
             </a>
-
-            <ul class="main-nav__list main-nav__list--showed">
-                <li class="main-nav__item">
-                    <a href="#">Главная</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#">Магазин</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#">Контакты</a>
-                </li>
-            </ul>
+            
+            <nav class="main-nav__menu main-nav__menu--showed">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Магазин</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <div class="main-nav__contacts">
+                    <p class="main-nav__description">Следи за нами в&nbsp;социальных сетях:</p>
+                    
+                    <ul class="social main-nav__social">
+                        <li class="social__item">
+                            <a href="#">
+                                <img src="img/tg-icon.svg" alt="Наши контакты в Телеграме">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#">
+                                <img src="img/vk-icon.svg" alt="Наши контакты во Вконтакте">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
             <div class="nav-button main-nav__nav-button">
                 <button class="nav-button__search">
-                    <img src="img/search.svg" alt="Иконка поиска">
+                        <img src="img/search.svg" alt="Иконка поиска">
                 </button>
-                <button >
-                   <a href="#">
-                      <div class="nav-button__cart">
-                         <img  src="img/cart.svg" alt="Иконка корзины">
-                              <div class="nav-button__ellipse-cart">
-                                  <img  src="img/ellipse_cart.svg" alt="">
-                              </div>
-                     </div>
-                   </a>
+                <button class="nav-button__cart">
+                            <img  src="img/cart.svg" alt="Иконка корзины">
+                            <span class="nav-button__pin">0</span>
+                </button>
+            </div>
+
+            <div class="nav-button main-nav__nav-burger">
+                <button class=" nav-button__close">
+                    <img src="img/icon-cross.svg" alt="Кнопка закрытия меню">
                 </button>
                 <button class="nav-button__burger">
-                      <img src="img/mobile_button_burger.svg" alt="Кнопка открытия меню">
-                </button>
-                <button class="nav-button__close">
-                    <img src="img/icon-cross.svg" alt="Кнопка закрытия меню">
+                    <img src="img/mobile_button_burger.svg" alt="Кнопка открытия меню">
                 </button>
             </div>
         </div>
-    </nav>
-  </body>
+    </header>
+</body>
 </html>
