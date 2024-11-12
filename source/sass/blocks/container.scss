@@ -1,13 +1,15 @@
 .container {
-    margin-left: 20px;
-    margin-right: 20px;
+    max-width: 1728px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @media  (min-width: 768px) and (max-width: 1280px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
     @media (min-width: 1280px) {
-        margin-left: 85px;
-        margin-right: 85px;
-    }
-    @media (max-width:767px) {
-        margin-left: 10px;
-        margin-right: 10px;
+        padding-left: 85px;
+        padding-right: 85px;
     }
 }
