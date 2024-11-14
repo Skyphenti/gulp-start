@@ -1,0 +1,6 @@
+.share-button {
+    @include clear-button;
+    background-image: url(../img/share-button.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}

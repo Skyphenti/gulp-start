@@ -14,7 +14,9 @@
 
     &__slider-pagination {
         position: absolute;
-        top: 10%;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 

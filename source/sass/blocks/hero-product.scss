@@ -34,7 +34,7 @@
         display: none;
     }
 
-    ::before {
+    &::before {
         content: "";
         background-image: url(/source/img/hero-logo-ultimate.svg);
     }

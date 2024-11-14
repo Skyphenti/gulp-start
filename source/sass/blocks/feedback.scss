@@ -1,0 +1,19 @@
+.feedback {
+    color: #000000;
+    &__container {
+        max-width: 300px;
+        height: 100%;
+    }
+
+    &__title {
+font-size: 32px;
+font-weight: 500;
+line-height: 44px;
+text-align: center;
+
+    }
+    &__feedback-cards {
+    }
+    &__feedback-card {
+    }
+}

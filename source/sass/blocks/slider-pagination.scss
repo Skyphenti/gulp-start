@@ -1,5 +1,8 @@
 .slider-pagination {
         color: #000000;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
             
     &__left-button {
         @include clear-button;

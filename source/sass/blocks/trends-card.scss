@@ -1,6 +1,6 @@
-.product-card {
+.trends-card {
     background-color: #D9D9D926;
-    height: 100%;
+    height: 359px;
     border: 2px solid #DEDEDE;
     border-radius: 15px;
     max-width: 300px;
@@ -18,41 +18,41 @@
     &__img {
         width: 100%;
         margin: auto;
+        rotate: -15deg;
         filter:
-            drop-shadow(0px 2.77px 2.21px #00000005) drop-shadow(0px 6.65px 5.32px #00000007) drop-shadow(0px 12.52px 10.02px #00000009) drop-shadow(0px 22.34px 17.87px #0000000B);
+            drop-shadow(0px 2.77px 2.21px #00000005)
+            drop-shadow(0px 6.65px 5.32px #00000007)
+            drop-shadow(0px 12.52px 10.02px #00000009)
+            drop-shadow(0px 22.34px 17.87px #0000000B)
+            drop-shadow(0px 41.78px 33.42px #0000000D)
+            drop-shadow(0px 100px 80px #00000012);
     }
 
     &__title {
-        font-size: 24px;
+        font-size: 21px;
         font-weight: 500;
-        line-height: 33.15px;
-        text-align: left;
-        margin: 0;
+        line-height: 25px;
     }
 
     &__footer {
         display: flex;
         justify-content: space-between;
-        margin-top: 16px;
-        align-items: center;
     }
 
     &__price {
         font-size: 24px;
         font-weight: 500;
         line-height: 29px;
+        align-content: center;
         text-decoration: none;
     }
 
     &__old-price {
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 25px;
-
+        display: none;
     }
 
     &__share-button {
-        width: 38px;
-        height: 38px;
+        width: 40px;
+        aspect-ratio: 1/1;
     }
 }

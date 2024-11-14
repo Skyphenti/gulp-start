@@ -1,0 +1,46 @@
+.best-selling {
+    color: #000000;
+    &__container {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    &__header {
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 44px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    &__gender-switch {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__gender-button {
+        width: 141px;
+        height: 35px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19px;
+        text-align: center;
+        
+    }
+
+    &__catalog-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__button {
+        margin: 25px auto 0;
+    }
+}
