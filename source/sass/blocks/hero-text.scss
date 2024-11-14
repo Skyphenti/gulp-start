@@ -1,0 +1,40 @@
+.hero-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+
+    &__top {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 27px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    &__mid {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: left;
+    }
+
+    &__bot {
+        font-size: 62px;
+        font-weight: 700;
+        line-height: 70px;
+        text-align: left;
+        margin-top: 4px;
+        margin-bottom: 20px;
+    }
+
+    &__slogan {
+        color: #000000BF;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 23px;
+        text-align: left;
+    }
+
+
+}

@@ -1,0 +1,39 @@
+.slider-pagination {
+        color: #000000;
+            
+    &__left-button {
+        @include clear-button;
+        border: 1px solid #000000;
+        border-radius: 50%;
+        background-color: #000000;
+        width: 11px;
+        aspect-ratio: 1/1;
+    }
+    
+    &__middle-button {
+        @include clear-button;
+        width: 30px;
+        height: 11px;
+        border: 1px solid #000000;
+        border-radius: 20px;
+        background-color: #000000;
+    }
+    
+    &__right-button {
+        @include clear-button;
+        border: 1px solid #000000;
+        border-radius: 50%;
+        background-color: #000000;
+        width: 11px;
+        aspect-ratio: 1/1;
+    }
+    
+    &--white {
+        .slider-pagination__left-button, 
+        .slider-pagination__middle-button, 
+        .slider-pagination__right-button {
+            background-color: #FFFFFF;
+            border-color: #FFFFFF;
+        }
+    }
+}

@@ -14,7 +14,7 @@
                 <img src="img/logo.svg" alt="Логотип компании Slick">
             </a>
             
-            <nav class="main-nav__menu main-nav__menu--showed">
+            <nav class="main-nav__menu">
                 <ul class="main-nav__list">
                     <li class="main-nav__item">
                         <a href="#">Главная</a>
@@ -68,16 +68,17 @@
         <section class="hero main-page__hero">
             <div class="container hero__container">
                 <div class="hero-text hero__hero-text">
-                    <span class="hero-text__top"></span>
-                    <span class="hero-text__mid"></span>
-                    <h2 class="hero-text__bot"></h2>
-                    <span class="hero-text__slogan"></span>
-                    <a class="button hero-text__button" href="#">За покупками</a>
+                    <span class="hero-text__top">Найди свои</span>
+                    <span class="hero-text__mid">Идеальные</span>
+                    <h2 class="hero-text__bot">Кроссы</h2>
+                    <span class="hero-text__slogan">Каждый шаг - к новым вершинам</span>
                 </div>
+
+                <a class="button hero__button" href="#">За покупками</a>
 
                 <article class="hero-product hero__hero-product">
                     <div class="hero-product__wrapper">
-                        <img class="hero-product__img" src="" alt="Trendy slick pro">
+                        <img class="hero-product__img" src="img/trendy-slick-pro.png" alt="Trendy slick pro">
                         <h2 class="hero-product__title">Trendy slick pro</h2>
                         <ins class="hero-product__price">3999&nbsp;₽</ins>
                         <del class="hero-product__old-price">4999&nbsp;₽</del>
@@ -87,19 +88,19 @@
         </section>
 
         <section class="main-slider main-page__main-slider">
-            <a class="main-slider__ozon" href="#"></a>
-            <a class="main-slider__wb" href="#"></a>
-            <a class="main-slider__sber" href=""></a>
-            <a class="main-slider__yandex" href="#"></a>
+            <a class="main-slider__ozon" href="#"><img src="img/logo-ozon.svg" alt="Ozon"></a>
+            <a class="main-slider__wb" href="#"><img src="img/logo-wildberries.svg" alt="Wildberries"></a>
+            <a class="main-slider__sber" href=""><img src="img/logo-sbermarket.svg" alt="Sbermarket"></a>
+            <a class="main-slider__yandex" href="#"><img src="img/logo-yandex.svg" alt="Yandex-market"></a>
         </section>
 
         <section class="trends main-page__trends">
             <div class="container trends__container">
                 <div class="trends__text">
-                    <span class="trends__description"></span>
-                    <h2 class="trends__popular"></h2>
-                    <span class="trends__slogan"></span>
-                    <a href="#" class="trends__button">Показать все</a>
+                    <span class="trends__description">Сегодня в тренде</span>
+                    <h2 class="trends__popular">Самые популярные</h2>
+                    <span class="trends__slogan">Посмотрите, что чаще всего покупают у нас</span>
+                    <a href="#" class="trends__button button">Показать все</a>
                 </div>
                 <div class="trends__list-slider">
                     <ul class="trends__product-list">
@@ -114,15 +115,35 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="product-card trends__product-card"></li>
-                        <li class="product-card trends__product-card"></li>
+                        <li class="product-card trends__product-card">
+                            <div class="product-card__wrapper">
+                                <img class="product-card__img" src="" alt="Trendy slick pro">
+                                <h2 class="product-card__title">Trendy slick pro</h2>
+                                <div class="product-card__footer">
+                                    <ins class="product-card__price">3999&nbsp;₽</ins>
+                                    <del class="product-card__old-price">4999&nbsp;₽</del>
+                                    <button class="product-card__share-button share-button"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-card trends__product-card">
+                            <div class="product-card__wrapper">
+                                <img class="product-card__img" src="" alt="Trendy slick pro">
+                                <h2 class="product-card__title">Trendy slick pro</h2>
+                                <div class="product-card__footer">
+                                    <ins class="product-card__price">3999&nbsp;₽</ins>
+                                    <del class="product-card__old-price">4999&nbsp;₽</del>
+                                    <button class="product-card__share-button share-button"></button>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                     <div class="trends__slider-pagination slider-pagination">
                         <button class="slider-pagination__left-button"></button>
                         <button class="slider-pagination__middle-button"></button>
                         <button class="slider-pagination__right-button"></button>
                     </div>
-                    <a href="#" class="trends__button">Показать все</a>
+                    <a href="#" class="trends__button trends__button--showed button">Показать все</a>
                 </div>
             </div>
         </section>
@@ -132,16 +153,18 @@
                 <div class="banners__slider">
                     <ul class="banners__list">
                         <li class="banner banners__item">
-                            <h2 class="banner__title"></h2>
-                            <a class="button banner__button" href="#"></a>
-                            <div class="banner__products">
-                                <a href="#"><img src="" alt=""></a>
-                                <a href="#"><img src="" alt=""></a>
-                                <a href="#"><img src="" alt=""></a>
+                            <div class="banner__wrapper">
+                                <span class="banner__title">Ты готов<br>проложить свой путь?</span>
+                                <a class="button button--white banner__button" href="#">См Все</a>
+                                <div class="banner__products">
+                                    <a href="#"><img src="" alt=""></a>
+                                    <a href="#"><img src="" alt=""></a>
+                                    <a href="#"><img src="" alt=""></a>
+                                </div>
                             </div>
                         </li>
                     </ul>
-                    <div class="banners__slider-pagination slider-pagination">
+                    <div class="banners__slider-pagination slider-pagination slider-pagination--white">
                         <button class="slider-pagination__left-button"></button>
                         <button class="slider-pagination__middle-button"></button>
                         <button class="slider-pagination__right-button"></button>
@@ -231,7 +254,7 @@
     </main>
 
     <footer class="footer">
-        
+
 
     </footer>
 </body>

@@ -1,0 +1,20 @@
+.banners {
+
+    &__slider {
+        position: relative;
+    }
+
+    &__list {
+        @include clear-list;
+    }
+
+    &__item {
+        margin: 0 -10px;
+    }
+
+    &__slider-pagination {
+        position: absolute;
+        top: 10%;
+    }
+}
+

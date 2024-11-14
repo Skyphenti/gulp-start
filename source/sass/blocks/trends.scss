@@ -1,0 +1,85 @@
+.trends {
+    color: #000000;
+
+
+    &__container {
+        max-height: 100%;
+    }
+
+    &__text {
+        margin-bottom: 34px;
+        max-width: 460px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__description {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        margin-left: 69px;
+    }
+
+    &__popular {
+        font-size: 45px;
+        font-weight: 500;
+        line-height: 54px;
+        margin-top: 15px;
+        margin-bottom: 24px;
+    }
+
+    &__slogan {
+        color: #000000BF;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+
+    }
+
+    &__button {
+
+        @media (max-width: 768px) {
+            display: none;
+            width: 300px;
+            height: 55px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 768px) {
+            display: block;
+            width: 290px;
+            height: 77px;
+        }
+
+        &--showed {
+            @media (max-width: 768px) {
+                display: block;
+            }
+
+            @media (min-width: 768px) {
+                display: none;
+            }
+        }
+    }
+
+    &__list-slider {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    &__product-list {
+        @include clear-list;
+    }
+
+    &__product-card {
+        width: 100%;
+    }
+
+    &__slider-pagination {
+        margin-top: 18px;
+        margin-bottom: 30px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+}
