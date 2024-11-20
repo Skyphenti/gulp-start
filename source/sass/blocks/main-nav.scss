@@ -150,11 +150,6 @@
     }
 
     &__social {
-        @include clear-list;
-        
-        display: flex;
-        justify-content: flex-end;
-        gap: 1px;
         margin-right: 2px;
         margin-bottom: 21px;
     }

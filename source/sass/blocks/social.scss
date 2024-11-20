@@ -1,4 +1,7 @@
 .social {
+    @include clear-list;
+    display: flex;
+    gap: 1px;
     
     &__item {
 
