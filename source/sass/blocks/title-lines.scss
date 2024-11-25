@@ -1,0 +1,19 @@
+.title-lines {
+    &::before,
+    &::after {
+        display: inline-block;
+        width: 41px;
+        height: 3px;
+        content: '';
+        background-color: #000000;
+        vertical-align: middle;
+    }
+
+    &::before {
+        margin-right: 10px;;
+    }
+
+    &::after {
+        margin-left: 10px;
+    }
+}

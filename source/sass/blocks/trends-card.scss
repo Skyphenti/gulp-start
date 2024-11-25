@@ -45,11 +45,16 @@
         line-height: 29px;
         align-content: center;
         text-decoration: none;
+        
+        &--old {
+            display: none;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+            text-decoration: line-through;
+        }
     }
 
-    &__old-price {
-        display: none;
-    }
 
     &__share-button {
         width: 40px;

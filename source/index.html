@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ваш проект</title>
     <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="main-nav">
         <div class="container main-nav__container">
             <a class="main-nav__logo" href="#">
                 <img src="img/logo.svg" alt="Логотип компании Slick">
             </a>
-            
+
             <nav class="main-nav__menu">
                 <ul class="main-nav__list">
                     <li class="main-nav__item">
@@ -28,7 +30,7 @@
                 </ul>
                 <div class="main-nav__contacts">
                     <p class="main-nav__description">Следи за нами в&nbsp;социальных сетях:</p>
-                    
+
                     <ul class="social main-nav__social">
                         <li class="social__item">
                             <a href="#">
@@ -46,11 +48,11 @@
 
             <div class="nav-button main-nav__nav-button">
                 <button class="nav-button__search">
-                        <img src="img/search.svg" alt="Иконка поиска">
+                    <img src="img/search.svg" alt="Иконка поиска">
                 </button>
                 <button class="nav-button__cart">
-                            <img  src="img/cart.svg" alt="Иконка корзины">
-                            <span class="nav-button__pin">0</span>
+                    <img src="img/cart.svg" alt="Иконка корзины">
+                    <span class="nav-button__pin">0</span>
                 </button>
             </div>
 
@@ -80,8 +82,8 @@
                     <div class="hero-product__wrapper">
                         <img class="hero-product__img" src="img/trendy-slick-pro.png" alt="Trendy slick pro">
                         <h2 class="hero-product__title">Trendy slick pro</h2>
-                        <ins class="hero-product__price">3999&nbsp;₽</ins>
-                        <del class="hero-product__old-price">4999&nbsp;₽</del>
+                        <span class="hero-product__price">3999&nbsp;₽</span>
+                        <span class="hero-product__price hero-product__price--old">4999&nbsp;₽</span>
                     </div>
                 </article>
             </div>
@@ -106,33 +108,36 @@
                     <ul class="trends__product-list">
                         <li class="trends-card trends__trends-card">
                             <div class="trends-card__wrapper">
-                                <img class="trends-card__img" src="img/running-sport-shoe-first.png" alt="Trendy slick pro">
+                                <img class="trends-card__img" src="img/running-sport-shoe-first.png"
+                                    alt="Trendy slick pro">
                                 <h2 class="trends-card__title">Trendy slick pro</h2>
                                 <div class="trends-card__footer">
-                                    <ins class="trends-card__price">3999&nbsp;₽</ins>
-                                    <del class="trends-card__old-price">4999&nbsp;₽</del>
+                                    <span class="trends-card__price">3999&nbsp;₽</span>
+                                    <span class="trends-card__price trends-card__price--old">4999&nbsp;₽</span>
                                     <button class="trends-card__share-button share-button"></button>
                                 </div>
                             </div>
                         </li>
                         <li class="trends-card trends__trends-card">
                             <div class="trends-card__wrapper">
-                                <img class="trends-card__img" src="img/running-sport-shoe-second.png" alt="Trendy slick pro">
+                                <img class="trends-card__img" src="img/running-sport-shoe-second.png"
+                                    alt="Trendy slick pro">
                                 <h2 class="trends-card__title">Trendy slick pro</h2>
                                 <div class="trends-card__footer">
-                                    <ins class="trends-card__price">3999&nbsp;₽</ins>
-                                    <del class="trends-card__old-price">4999&nbsp;₽</del>
+                                    <span class="trends-card__price">3999&nbsp;₽</span>
+                                    <span class="trends-card__price trends-card__price--old">4999&nbsp;₽</span>
                                     <button class="trends-card__share-button share-button"></button>
                                 </div>
                             </div>
                         </li>
                         <li class="trends-card trends__trends-card">
                             <div class="trends-card__wrapper">
-                                <img class="trends-card__img" src="img/running-sport-shoe-third.png" alt="Trendy slick pro">
+                                <img class="trends-card__img" src="img/running-sport-shoe-third.png"
+                                    alt="Trendy slick pro">
                                 <h2 class="trends-card__title">Trendy slick pro</h2>
                                 <div class="trends-card__footer">
-                                    <ins class="trends-card__price">3999&nbsp;₽</ins>
-                                    <del class="trends-card__old-price">4999&nbsp;₽</del>
+                                    <span class="trends-card__price">3999&nbsp;₽</span>
+                                    <span class="trends-card__price trends-card__price--old">4999&nbsp;₽</span>
                                     <button class="trends-card__share-button share-button"></button>
                                 </div>
                             </div>
@@ -198,32 +203,33 @@
         <section class="main-page__best-selling best-selling">
             <div class="container best-selling__container">
                 <div class="best-selling__header">
-                    <h2 class="best-selling__title">Best selling</h2>
+                    <h2 class="best-selling__title title-lines">Best selling</h2>
                     <div class="best-selling__gender-switch">
                         <button type="button" class="button best-selling__gender-button">Мужские</button>
                         <button type="button" class="button button--white best-selling__gender-button">Женские</button>
                     </div>
                 </div>
                 <div class="best-selling__catalog-wrapper">
-                    <article class="product-card best-selling__product-card">
+                    <article class="product-card product-card--hot best-selling__product-card">
                         <div class="product-card__wrapper">
-                            <img class="product-card__img" src="img/slick-formal-sneaker-shoe.png" alt="Trendy slick pro">
+                            <img class="product-card__img" src="img/slick-formal-sneaker-shoe.png"
+                                alt="Trendy slick pro">
                             <h2 class="product-card__title">Slick formal sneaker shoe</h2>
                             <div class="product-card__footer">
-                                <ins class="product-card__price">3999&nbsp;₽</ins>
-                                <del class="product-card__old-price">4999&nbsp;₽</del>
+                                <span class="product-card__price">3999&nbsp;₽</span>
+                                <span class="product-card__price product-card__price--old">4999&nbsp;₽</span>
                                 <button class="product-card__share-button share-button"></button>
                             </div>
                         </div>
                     </article>
 
-                    <article class="product-card best-selling__product-card">
+                    <article class="product-card product-card--new best-selling__product-card">
                         <div class="product-card__wrapper">
                             <img class="product-card__img" src="img/slick-sneaker-shoe.png" alt="Trendy slick pro">
                             <h2 class="product-card__title">Slick sneaker shoe</h2>
                             <div class="product-card__footer">
-                                <ins class="product-card__price">3999&nbsp;₽</ins>
-                                <del class="product-card__old-price">4999&nbsp;₽</del>
+                                <span class="product-card__price">3999&nbsp;₽</span>
+                                <span class="product-card__price product-card__price--old">4999&nbsp;₽</span>
                                 <button class="product-card__share-button share-button"></button>
                             </div>
                         </div>
@@ -234,8 +240,8 @@
                             <img class="product-card__img" src="img/slick-canvas-shoe.png" alt="Trendy slick pro">
                             <h2 class="product-card__title">Slick canvas shoe</h2>
                             <div class="product-card__footer">
-                                <ins class="product-card__price">3999&nbsp;₽</ins>
-                                <del class="product-card__old-price">4999&nbsp;₽</del>
+                                <span class="product-card__price">3999&nbsp;₽</span>
+                                <span class="product-card__price product-card__price--old">4999&nbsp;₽</span>
                                 <button class="product-card__share-button share-button"></button>
                             </div>
                         </div>
@@ -247,7 +253,7 @@
 
         <section class="feedback main-page__feedback">
             <div class="container feedback__container">
-                <h2 class="feedback__title">Отзывы <span class="feedback__title-description">о кроссах</span></h2>
+                <h2 class="feedback__title title-lines">Отзывы <span class="feedback__title-description">о кроссах</span></h2>
                 <div class="feedback__feedback-cards">
                     <article class="feedback-card feedback__feedback-card">
                         <div class="feedback-card__wrapper">
@@ -256,7 +262,9 @@
                                 <span class="feedback-card__client-name">Ava Joshi</span>
                                 <span class="feedback-card__score"></span>
                             </div>
-                            <p class="feedback-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nostrum pariatur a odio reprehenderit, dolorem soluta. Maiores modi vero voluptatibus.</p>
+                            <p class="feedback-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Labore nostrum pariatur a odio reprehenderit, dolorem soluta. Maiores modi vero
+                                voluptatibus.</p>
                         </div>
                     </article>
 
@@ -267,7 +275,8 @@
                                 <span class="feedback-card__client-name">Otis bisnoy</span>
                                 <span class="feedback-card__score"></span>
                             </div>
-                            <p class="feedback-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quis asperiores, in eveniet illo natus?</p>
+                            <p class="feedback-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestias quis asperiores, in eveniet illo natus?</p>
                         </div>
                     </article>
                 </div>
@@ -279,17 +288,17 @@
         <div class="container footer__container">
             <div class="footer__wrapper">
                 <div class="footer__banner">
-                    <img class="footer__logo" src="img/logo.svg" alt="Логотип компании Slick">
+                    <img class="footer__logo" src="img/logo-white.svg" alt="Логотип компании Slick">
                     <span class="footer__phrase">Лучший выбор сделает лишь лучший. Ауф!</span>
                     <ul class="social footer__social">
                         <li class="social__item">
                             <a href="#">
-                                <img src="img/tg-icon.svg" alt="Наши контакты в Телеграме">
+                                <img src="img/tg-icon-white.svg" alt="Наши контакты в Телеграме">
                             </a>
                         </li>
                         <li class="social__item">
                             <a href="#">
-                                <img src="img/vk-icon.svg" alt="Наши контакты во Вконтакте">
+                                <img src="img/vk-icon-white.svg" alt="Наши контакты во Вконтакте">
                             </a>
                         </li>
                     </ul>
@@ -297,20 +306,24 @@
                 <div class="footer__nav">
                     <span>Быстрые ссылки</span>
                     <ul class="footer__nav-list">
-                        <li class="footer__nav-item"></li>
-                        <li class="footer__nav-item"></li>
-                        <li class="footer__nav-item"></li>
+                        <li class="footer__nav-item">Главная</li>
+                        <li class="footer__nav-item">Магазин</li>
+                        <li class="footer__nav-item">Контакты</li>
                     </ul>
                 </div>
-                <div class="subscribe">
-                    <form action="">
-                        <input type="text">
+                <div class="footer__subscribe">
+                    <label  for="subscribe" class="footer__label">
+                        Подпишись на наши акции
+                    </label>
+                    <form class="footer__form">
+                        <input id="subscribe" type="email" placeholder="Введи E-mail...">
+                        <button type="submit">Подписаться</button>
                     </form>
                 </div>
-                <p class="info">www.slick.com©all right reserve</p>
             </div>
-
+            <p class="footer__info">www.slick.com©all right reserve</p>
         </div>
     </footer>
 </body>
+
 </html>
