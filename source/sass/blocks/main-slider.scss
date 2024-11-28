@@ -14,21 +14,41 @@
     img {
         height: 16px;
         display: block;
+
+        @media (min-width: 768px) {
+            height: 40px;
+        }
     }
 
     &__ozon {
         width: 73px;
+
+        @media (min-width: 768px) {
+            width: 181px;
+        }
     }
 
     &__wb {
         width: 107px;
+
+        @media (min-width: 768px) {
+            width: 266px;
+        }
     }
 
     &__sber {
         width: 120px;
+
+        @media (min-width: 768px) {
+            width: 299px;
+        }
     }
 
     &__yandex {
         width: 120px;
+
+        @media (min-width: 768px) {
+            width: 209px;
+        }
     }
 }

@@ -1,8 +1,7 @@
 .best-selling {
     color: #000000;
     &__container {
-        max-width: 320px;
-        margin: 0 auto;
+        width: 100%;
     }
 
     &__header {
@@ -20,7 +19,8 @@
     &__gender-switch {
         margin-top: 20px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 79px;
 
     }
 
@@ -31,13 +31,14 @@
         font-weight: 500;
         line-height: 19px;
         text-align: center;
-        
+        box-shadow: none;        
     }
 
     &__catalog-wrapper {
         display: flex;
         flex-direction: column;
         gap: 25px;
+        align-items: center;
     }
 
     &__button {

@@ -3,7 +3,7 @@
     height: 359px;
     border: 2px solid #DEDEDE;
     border-radius: 15px;
-    max-width: 300px;
+    width: 308px;
 
     &__wrapper {
         padding: 0 35px 30px;
@@ -32,6 +32,7 @@
         font-size: 21px;
         font-weight: 500;
         line-height: 25px;
+        text-align: left;
     }
 
     &__footer {
