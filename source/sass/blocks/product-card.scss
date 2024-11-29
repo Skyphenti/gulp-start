@@ -6,12 +6,18 @@
     max-width: 300px;
     position: relative;
 
+    @media (min-width: 768px) and (max-width: 1280px) {
+        max-width: 100%;
+    }
+
     &--hot,
     &--new {
         &::before {
         display: grid;
         place-content: center;
         position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
         width: 59px;
         height: 32px;
         color: #ffffff;
@@ -58,7 +64,7 @@
     &__title {
         font-size: 24px;
         font-weight: 500;
-        line-height: 33.15px;
+        line-height: 33px;
         text-align: left;
         margin: 0;
     }
@@ -68,26 +74,35 @@
         justify-content: space-between;
         margin-top: 16px;
         align-items: center;
+
+        @media (min-width: 768px) and (max-width: 1280px) {
+            justify-content: start;
+        }
     }
 
     &__price {
         font-size: 24px;
-        font-weight: 500;
         line-height: 29px;
         text-decoration: none;
 
         &--old {
             font-size: 18px;
-            font-weight: 400;
             line-height: 25px;
             text-decoration: line-through;
+
+            @media (min-width: 768px) and (max-width: 1280px) {
+                margin-left: 20px;
+            }
         }
         
     }
 
-
     &__share-button {
         width: 38px;
         height: 38px;
+
+        @media (min-width: 768px) and (max-width: 1280px) {
+            margin-left: auto;
+        }
     }
 }

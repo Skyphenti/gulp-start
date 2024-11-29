@@ -1,0 +1,58 @@
+.big-card-catalog {
+
+    @media (min-width: 768px) and (max-width: 1280px) {
+        grid-row: 1 / span 2;
+        grid-column: 1 / span 2;
+
+
+        &.product-card {
+
+            &--hot,
+            &--new {
+                &::before {
+                    width: 120px;
+                    height: 65px;
+                    font-size: 36px;
+                    line-height: 50px;
+                    top: 104px;
+                }
+            }
+        }
+
+        .product-card {
+
+            &__wrapper {
+                padding: 0 52px 53px;
+            }
+
+            &__title {
+                font-size: 64px;
+                line-height: 88.39px;
+                text-align: center;
+            }
+
+            &__footer {
+                margin-top: 41px;
+                justify-content: start;
+            }
+
+            &__price {
+                font-size: 48px;
+                line-height: 66px;
+
+                &--old {
+                    font-size: 24px;
+                    line-height: 29px;
+                    margin-left: 68px;
+                }
+            }
+
+            &__share-button {
+                width: 65px;
+                height: 65px;
+                margin-left: auto;
+            }
+        }
+
+    }
+}
