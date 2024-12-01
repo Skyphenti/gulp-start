@@ -2,6 +2,10 @@
     background-color: #DC4B54;
     position: relative;
 
+    @media (min-width: 1280px) {
+        border-radius: 20px;
+    }
+
     &::before {
         background-image: url("../img/logo-slick-banner.svg");
         background-repeat: no-repeat;
@@ -14,11 +18,16 @@
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
+
+        @media (min-width: 1280px) {
+            width: calc(978/1560*100%);
+            left: 0;
+            transform: none;
+        }
     }
 
     &__wrapper {
-        max-width: 320px;
-        width: 100%;
+        width: 320px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -29,6 +38,16 @@
             min-width: 768px;
             padding: 40px 0 148px;
         }
+
+        @media (min-width: 1280px) {
+            width: 50%;
+            padding-right: 0;
+            padding-top: 88px;
+            padding-bottom: 129px;
+            padding-left: 0;
+            margin: 0 0 0 50%;
+            align-items: start;
+        }
     }
 
     &__title {
@@ -38,9 +57,13 @@
         line-height: 29px;
         text-align: center;
 
-        @media (min-width: 768px) and (max-width: 1280px) {
+        @media (min-width: 768px) {
             font-size: 58px;
             line-height: 70px;
+        }
+
+        @media (min-width: 1280px) {
+            text-align: left;
         }
     }
 
@@ -56,13 +79,18 @@
         color: #DC4B54;
         box-shadow: none;
 
-        @media (min-width: 768px) and (max-width: 1280px) {
+        @media (min-width: 768px) {
             width: 219px;
             height: 66px;
             font-size: 28px;
             line-height: 34px;
             margin-top: 81px;
             margin-bottom: 32px;
+        }
+
+        @media (min-width: 1280px) {
+            margin-top: 33px;
+            margin-bottom: 51px;
         }
     }
 

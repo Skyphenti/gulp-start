@@ -1,7 +1,8 @@
 .hero-product {
     background: linear-gradient(180deg, #E4E4E4 0%, #FAFAFA 100%);
     position: relative;
-    
+
+
     &::before {
         content: '';
         background-image: url("../img/hero-logo-ultimate.svg");
@@ -14,6 +15,33 @@
         left: 50%;
         transform: translateX(-50%);
         z-index: 0;
+
+        @media (min-width: 1280px) {
+            width: 50vw;
+        }
+    }
+
+    @media (min-width: 1280px) {
+        width: calc(913/1558 *100%);
+        background: transparent;
+
+        &::after {
+            background: linear-gradient(90deg, #E4E4E4 0%, #FAFAFA 100%);
+            background-size: contain;
+            content: '';
+            width: calc(100% + 85px);
+            height: calc(100% + 316px);
+            position: absolute;
+            top: -316px;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 0;
+
+            @media (min-width: 1560px) {
+                width: calc(100% + 85px + (100vw - 1560px)/2);
+            }
+        }
     }
 
     &__wrapper {
@@ -23,28 +51,48 @@
         align-items: center;
         justify-content: flex-end;
         margin: 0 auto;
+        padding: 28px 10px 32px;
         height: 100%;
-        max-width: 300px;
+        max-width: 480px;
         z-index: 100;
-
+        
         @media (min-width: 768px) and (max-width: 1280px) {
-            max-width: 504px;
+            max-width: calc(504 / 768 *100%);
+            padding: 56px 0 40px;
+        }
+        
+        @media (min-width: 1280px) {
+            width: calc(783/998 *100%);
+            padding-bottom: 137px;
+            max-width: none;
+            padding: 0;
+            margin-top: 0;
+            margin-left: auto;
+            margin-right: 22px;
         }
     }
+
     &__img {
-        margin: auto;
+        margin: 0 auto;
         width: 100%;
     }
+
     &__title {
-        margin: 0;
+        margin: 55px 0 11px;
         color: #000000;
         font-size: 24px;
         font-weight: 500;
         line-height: 22px;
 
-        @media (min-width: 768px) and (max-width: 1280px) {
+
+        @media (min-width: 768px) {
             font-size: 38px;
             line-height: 35px;
+            margin: 56px 0 15px;
+        }
+
+        @media (min-width: 1280px) {
+            margin-top: 117px;
         }
     }
 
@@ -52,17 +100,13 @@
         text-decoration: none;
         font-size: 20px;
         line-height: 18px;
-        margin-bottom: 32px;
-        margin-top: 11px;
         color: #00000080;
 
-        @media (min-width: 768px) and (max-width: 1280px) {
-            margin-top: 15px;
-            margin-bottom: 40px;
+        @media (min-width: 768px) {
             font-size: 32px;
             line-height: 29px;
         }
-        
+
         &--old {
             display: none;
             font-size: 18px;

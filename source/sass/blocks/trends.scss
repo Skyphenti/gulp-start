@@ -4,11 +4,17 @@
 
     &__container {
         width: 100%;
-        
+
         @media (min-width: 768px) and (max-width: 1280px) {
             display: flex;
             justify-content: center;
             gap: max(11vw, 87px)
+        }
+
+        @media (min-width: 1280px) {
+            display: flex;
+            justify-content: center;
+            // gap: max(11vw, 87px)
         }
     }
 
@@ -22,6 +28,11 @@
         @media (min-width: 768px) and (max-width: 1280px) {
             width: 290px;
             margin: 0;
+        }
+
+        @media (min-width: 1280px) {
+            margin-left: 0;
+            justify-content: start;
         }
     }
 
@@ -43,6 +54,10 @@
         @media (min-width: 768px) and (max-width: 1280px) {
             margin-top: 14px;
         }
+
+        @media (min-width: 1280px) {
+            margin-top: 41px;
+        }
     }
 
     &__popular {
@@ -59,7 +74,7 @@
         font-weight: 500;
         line-height: 22px;
 
-        @media (min-width: 768px) and (max-width: 1280px) {
+        @media (min-width: 768px) {
             margin-bottom: 27px;
         }
 
@@ -94,6 +109,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media (min-width: 1280px) {
+            width: 68%;
+        }
     }
 
     &__product-list {
@@ -101,6 +120,11 @@
 
         @media (min-width: 768px) and (max-width: 1280px) {
             display: flex;
+        }
+
+        @media (min-width: 1280px) {
+            display: flex;
+            justify-content: space-between;
         }
     }
 
@@ -115,6 +139,11 @@
 
         @media (min-width: 768px) and (max-width: 1280px) {
             margin-top: 30px;
+            margin-bottom: 0;
+        }
+
+        @media (min-width: 1280px) {
+            margin-top: 50px;
             margin-bottom: 0;
         }
     }

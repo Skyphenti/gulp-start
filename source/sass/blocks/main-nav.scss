@@ -1,6 +1,6 @@
 .main-nav {
-    background-color: #fff;
-
+    position: relative;
+    z-index: 999;
 
     &__container {
         display: flex;

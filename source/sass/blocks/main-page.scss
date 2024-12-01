@@ -9,6 +9,10 @@
         @media (min-width: 768px) and (max-width: 1280px) {
             margin-top: 59px;
         }
+
+        @media (min-width: 1280px) {
+            margin-top: 202px;
+        }
     }
 
     &__main-slider {
@@ -31,6 +35,11 @@
             margin-top: 66px;
             margin-bottom: 100px;
         }
+
+        @media (min-width: 1280px) {
+            margin-top: 132px;
+            margin-bottom: 155px;
+        }
     }
 
     &__banners {
@@ -39,10 +48,18 @@
         @media (min-width: 768px) and (max-width: 1280px) {
             margin-bottom: 88px;
         }
+
+        @media (min-width: 1280px) {
+            margin-bottom: 124px;
+        }
     }
 
     &__best-selling {
         margin-bottom: 70px;
+
+        @media (min-width: 1280px) {
+            margin-bottom: 83px;
+        }
     }
 
     &__feedback {
@@ -50,6 +67,10 @@
 
         @media (min-width: 768px) and (max-width: 1280px) {
             margin-bottom: 70px;
+        }
+
+        @media (min-width: 1280px) {
+            margin-bottom: 95px;
         }
     }
 }

@@ -5,6 +5,10 @@
     border-radius: 15px;
     width: 308px;
 
+    @media (min-width: 1280px) {
+        width: 29%;
+    }
+
     &__wrapper {
         padding: 0 35px 30px;
         width: 100%;

@@ -2,32 +2,28 @@
 
     &__container {
         width: 100%;
+
+        @media (max-width: 1279px) {
+            display: block;
+        }
+
+        @media (min-width: 1280px) {
+            display: flex;
+        }
     }
 
     &__hero-text {
-        max-width: 300px;
-        margin-bottom: 22px;
-        
-        @media (min-width: 768px) and (max-width: 1280px) {
-            max-width: 1280px;
-            margin-bottom: 72px;
+
+        @media (min-width: 1280px) {
+            width: calc(590/1728 *100%);
+        }
+
+        @media (min-width: 1280px) {
+            margin-top: 24px;
         }
     }
 
-    &__button {
-        width: 300px;
-        height: 55px;
-        margin: 0 auto;
-        font-size: 20px;
-        line-height: 31px;
 
-        @media (min-width: 768px) and (max-width: 1280px) {
-            width: 458px;
-            height: 87px;
-            font-size: 28px;
-            line-height: 43px;
-        }
-    }
 
     &__hero-product {
         margin-top: 54px;
@@ -36,6 +32,13 @@
 
         @media (min-width: 768px) and (max-width: 1280px) {
             margin-top: 72px;
+        }
+
+        @media (min-width: 1280px) {
+            margin-left: auto;
+            margin-top: 0;
+            margin-right: 0;
+            padding-bottom: 108px;
         }
     }
 }
