@@ -11,13 +11,21 @@
         width: 97vw;
         position: absolute;
         height: 100%;
-        top: 0;
         left: 50%;
-        transform: translateX(-50%);
         z-index: 0;
+        
+        @media (max: 1280px) {
+            top: 0;
+            transform: translateX(-50%);
+        }
 
         @media (min-width: 1280px) {
-            width: 50vw;
+            background-image: url("../img/hero-logo-ultimate-vertical.svg");
+            z-index: 1;
+            width: 100%;
+            height: 849px;
+            bottom: 17px;
+            left: calc(4% - 1px);
         }
     }
 
@@ -34,7 +42,7 @@
             position: absolute;
             top: -316px;
             right: 0;
-            left: 0;
+            left: 4%;
             bottom: 0;
             z-index: 0;
 
