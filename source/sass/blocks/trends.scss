@@ -138,6 +138,7 @@
         @media (min-width: 768px) {
             @include clear-button;
             position: absolute;
+            height: 27px;   
         }
 
         &--left {

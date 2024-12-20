@@ -1,0 +1,112 @@
+.modal {
+    width: 300px;
+    background-color: #FBFBFB;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 2.77px 2.21px 0px #00000005,
+        0px 6.65px 5.32px 0px #00000007,
+        0px 12.52px 10.02px 0px #00000009,
+        0px 22.34px 17.87px 0px #0000000B,
+        0px 41.78px 33.42px 0px #0000000D,
+        0px 100px 80px 0px #00000012;
+    padding: 20px 23px;
+    position: relative;
+
+    &--showed {
+        display: block;
+    }
+
+    @media (min-width: 768px) {
+        width: 464px;
+        padding: 30px 40px;
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    &__container {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__button {
+        margin-top: 20px;
+        width: 254px;
+        height: 48px;
+        font-size: 16px;
+        line-height: 24px;
+
+        @media (min-width: 768px) {
+            margin-top: 37px;
+            width: 313px;
+            height: 63px;
+            font-size: 24px;
+            line-height: 37px;
+        }
+    }
+
+    &__close {
+        @include clear-button;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-image: url(../img/icon-cross.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 11px;
+        height: 11px;
+
+        @media (min-width: 768px) {
+            width: 20px;
+            height: 20px;
+            top: 20px;
+            right: 20px;
+        }
+    }
+
+    &__subscribe {
+        padding: 30px 18px;
+
+        @media (min-width: 768px) {
+            padding: 55px 34px;
+        }
+    }
+
+    &__error-alert {
+        span {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 15px;
+
+            @media (min-width: 768px) {
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+        }
+
+        .modal__button {
+            @media (min-width: 768px) {
+                margin-top: 25px;
+            }
+        }
+    }
+
+    &__error {
+        margin-top: 0;
+        color: #DC4B54;
+        margin-bottom: 10px;
+    }
+
+    &__order {
+        .modal__button {
+            @media (min-width: 768px) {
+                width: 323px;
+            }
+        }
+    }
+}

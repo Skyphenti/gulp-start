@@ -8,9 +8,6 @@
         margin-top: 15px;
         justify-content: space-between;
 
-        @media (max-width: 767px) {
-            padding-right: 46px;
-        }
 
         @media (min-width: 768px) and (max-width: 1279px) {
             margin-top: 20px;
@@ -22,16 +19,14 @@
     }
 
     &__logo {
-
         img {
-            width: 94px;
-            height: 32px;
+            width: 75px;
+            height: 25px;
         }
-
-        @media (max-width: 767px) {
+        @media (min-width: 768px) {
             img {
-                width: 75px;
-                height: 25px;
+                width: 94px;
+                height: 32px;
             }
         }
     }
@@ -66,7 +61,7 @@
             }
 
         &--showed {
-
+            z-index: 100;
             @media (max-width:768px) {
                 display: flex;
                 flex-direction: column;
@@ -126,18 +121,25 @@
     }
 
     &__nav-button {
+        position: absolute;
+        right: 10px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 115px;
         height: 33px;
-        position: relative;
         z-index: 101;
         padding-right: 5px;
-        
-        @media (max-width: 767px) {
-            width: 71px;
-            padding-right: 6px;
+
+        &--fixed {
+            position: fixed;
+            right: 10px;
         }
+
+        @media (min-width: 768px) {
+            position: static;
+        }
+        
     }
 
     &__description {
@@ -155,8 +157,6 @@
     }
 
     &__nav-burger {
-        padding: 7px;
-        position: absolute;
         z-index: 101;
         top: 14px;
         right: 8px;

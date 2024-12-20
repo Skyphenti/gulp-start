@@ -56,6 +56,7 @@
 
     &__img {
         width: 100%;
+        aspect-ratio: 1/1;
         margin: 0 auto;
         filter:
             drop-shadow(0px 2.77px 2.21px #00000005) drop-shadow(0px 6.65px 5.32px #00000007) drop-shadow(0px 12.52px 10.02px #00000009) drop-shadow(0px 22.34px 17.87px #0000000B);
@@ -67,6 +68,11 @@
         line-height: 33px;
         text-align: left;
         margin: 0;
+    }
+
+    &__link {
+        position: absolute;
+        inset: 0;
     }
 
     &__footer {
@@ -97,9 +103,10 @@
         
     }
 
-    &__share-button {
+    &__add-button {
         width: 38px;
         height: 38px;
+        position: relative;
 
         @media (min-width: 768px) and (max-width: 1280px) {
             margin-left: auto;

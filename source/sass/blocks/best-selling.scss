@@ -60,27 +60,6 @@
         }
     }
 
-    &__catalog-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        align-items: center;
-
-        @media (min-width: 768px) {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            gap: 40px 40px;
-        }
-
-        @media (min-width: 1280px) {
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            row-gap: 69px;
-            column-gap: 29px;
-        }
-    }
-
     &__button {
         margin: 25px auto 0;
 

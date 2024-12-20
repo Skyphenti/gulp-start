@@ -47,23 +47,23 @@
             </nav>
 
             <div class="nav-button main-nav__nav-button">
-                <button class="nav-button__search">
+                <button type="button" class="nav-button__search">
                     <img src="img/search.svg" alt="Иконка поиска">
                 </button>
-                <button class="nav-button__cart">
+                <button type="button" class="nav-button__cart">
                     <img src="img/cart.svg" alt="Иконка корзины">
                     <span class="nav-button__pin">0</span>
                 </button>
+                <div class="nav-button main-nav__nav-burger">
+                    <button type="button" class="nav-button__close">
+                        <img src="img/icon-cross.svg" alt="Кнопка закрытия меню">
+                    </button>
+                    <button type="button" class="nav-button__burger">
+                        <img src="img/mobile_button_burger.svg" alt="Кнопка открытия меню">
+                    </button>
+                </div>
             </div>
 
-            <div class="nav-button main-nav__nav-burger">
-                <button class=" nav-button__close">
-                    <img src="img/icon-cross.svg" alt="Кнопка закрытия меню">
-                </button>
-                <button class="nav-button__burger">
-                    <img src="img/mobile_button_burger.svg" alt="Кнопка открытия меню">
-                </button>
-            </div>
         </div>
     </header>
     <main class="main-page">
@@ -114,7 +114,7 @@
                                 <div class="trends-card__footer">
                                     <span class="trends-card__price">3999&nbsp;₽</span>
                                     <span class="trends-card__price trends-card__price--old">4999&nbsp;₽</span>
-                                    <button class="trends-card__share-button share-button"></button>
+                                    <button type="button" class="trends-card__add-button add-button"></button>
                                 </div>
                             </div>
                         </li>
@@ -126,7 +126,7 @@
                                 <div class="trends-card__footer">
                                     <span class="trends-card__price">3999&nbsp;₽</span>
                                     <span class="trends-card__price trends-card__price--old">4999&nbsp;₽</span>
-                                    <button class="trends-card__share-button share-button"></button>
+                                    <button type="button" class="trends-card__add-button add-button"></button>
                                 </div>
                             </div>
                         </li>
@@ -138,17 +138,19 @@
                                 <div class="trends-card__footer">
                                     <span class="trends-card__price">3999&nbsp;₽</span>
                                     <span class="trends-card__price trends-card__price--old">4999&nbsp;₽</span>
-                                    <button class="trends-card__share-button share-button"></button>
+                                    <button type="button" class="trends-card__add-button add-button"></button>
                                 </div>
                             </div>
                         </li>
                     </ul>
-                    <button class="trends__slider-button trends__slider-button--left"><img src="img/trends-button.svg" alt=""></button>
-                    <button class="trends__slider-button trends__slider-button--right"><img src="img/trends-button.svg" alt=""></button>
+                    <button type="button" class="trends__slider-button trends__slider-button--left"><img
+                            src="img/trends-button.svg" alt=""></button>
+                    <button type="button" class="trends__slider-button trends__slider-button--right"><img
+                            src="img/trends-button.svg" alt=""></button>
                     <div class="trends__slider-pagination slider-pagination">
-                        <button class="slider-pagination__left-button"></button>
-                        <button class="slider-pagination__middle-button"></button>
-                        <button class="slider-pagination__right-button"></button>
+                        <button type="button" class="slider-pagination__left-button"></button>
+                        <button type="button" class="slider-pagination__middle-button"></button>
+                        <button type="button" class="slider-pagination__right-button"></button>
                     </div>
                     <a href="#" class="trends__button trends__button--showed button">Показать все</a>
                 </div>
@@ -193,18 +195,20 @@
                             </div>
                         </li>
                     </ul>
-                    <button type="button" class="banners__button banners__button--left"><img src="img/slider-button.svg" alt=""></button>
-                    <button type="button" class="banners__button banners__button--right"><img src="img/slider-button.svg" alt=""></button>
+                    <button type="button" class="banners__button banners__button--left"><img src="img/slider-button.svg"
+                            alt=""></button>
+                    <button type="button" class="banners__button banners__button--right"><img
+                            src="img/slider-button.svg" alt=""></button>
                     <div class="banners__slider-pagination slider-pagination slider-pagination--white">
-                        <button class="slider-pagination__left-button"></button>
-                        <button class="slider-pagination__middle-button"></button>
-                        <button class="slider-pagination__right-button"></button>
+                        <button type="button" class="slider-pagination__left-button"></button>
+                        <button type="button" class="slider-pagination__middle-button"></button>
+                        <button type="button" class="slider-pagination__right-button"></button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="main-page__best-selling best-selling">
+        <section class="main-page__best-selling best-selling best-selling">
             <div class="container best-selling__container">
                 <div class="best-selling__header">
                     <h2 class="best-selling__title title-lines">Best selling</h2>
@@ -213,28 +217,33 @@
                         <button type="button" class="button button--white best-selling__gender-button">Женские</button>
                     </div>
                 </div>
-                <div class="best-selling__catalog-wrapper">
-                    <article class="product-card product-card--hot best-selling__product-card big-card-catalog">
+                <template id="product">
+                    <article class="product-card product-card--hot best-selling__product-card">
                         <div class="product-card__wrapper">
                             <img class="product-card__img" src="img/slick-formal-sneaker-shoe.png"
                                 alt="Trendy slick pro">
-                            <h2 class="product-card__title">Slick formal sneaker shoe</h2>
+                            <h2 class="product-card__title"></h2>
+                            <a href="#" class="product-card__link"></a>
                             <div class="product-card__footer">
-                                <span class="product-card__price">3999&nbsp;₽</span>
-                                <span class="product-card__price product-card__price--old">4999&nbsp;₽</span>
-                                <button class="product-card__share-button share-button"></button>
+                                <span class="product-card__price"></span>
+                                <span class="product-card__price product-card__price--old"></span>
+                                <button type="button" class="product-card__add-button add-button"></button>
                             </div>
                         </div>
                     </article>
+                </template>
+                <ul class="best-selling__catalog catalog catalog__list">
 
-                    <article class="product-card product-card--new best-selling__product-card">
+
+                    <!-- <article class="product-card product-card--new best-selling__product-card">
                         <div class="product-card__wrapper">
                             <img class="product-card__img" src="img/slick-sneaker-shoe.png" alt="Trendy slick pro">
+                            <a href="#" class="product-card__link"></a>
                             <h2 class="product-card__title">Slick sneaker shoe</h2>
                             <div class="product-card__footer">
                                 <span class="product-card__price">3999&nbsp;₽</span>
                                 <span class="product-card__price product-card__price--old">4999&nbsp;₽</span>
-                                <button class="product-card__share-button share-button"></button>
+                                <button type="button" class="product-card__add-button add-button"></button>
                             </div>
                         </div>
                     </article>
@@ -246,18 +255,19 @@
                             <div class="product-card__footer">
                                 <span class="product-card__price">3999&nbsp;₽</span>
                                 <span class="product-card__price product-card__price--old">4999&nbsp;₽</span>
-                                <button class="product-card__share-button share-button"></button>
+                                <button type="button" class="product-card__add-button add-button"></button>
                             </div>
                         </div>
-                    </article>
-                </div>
+                    </article> -->
+                </ul>
                 <a class="button best-selling__button" href="#">Показать Все</a>
             </div>
         </section>
 
         <section class="feedback main-page__feedback">
             <div class="container feedback__container">
-                <h2 class="feedback__title title-lines">Отзывы <span class="feedback__title-description">о кроссах</span></h2>
+                <h2 class="feedback__title title-lines">Отзывы <span class="feedback__title-description">о
+                        кроссах</span></h2>
                 <div class="feedback__feedback-cards">
                     <article class="feedback-card feedback__feedback-card">
                         <div class="feedback-card__wrapper">
@@ -316,18 +326,48 @@
                     </ul>
                 </div>
                 <div class="footer__subscribe">
-                    <label  for="subscribe" class="footer__label">
+                    <label for="subscribe" class="footer__label">
                         Подпишись на наши акции
                     </label>
                     <form class="footer__form">
                         <input id="subscribe" type="email" placeholder="Введи E-mail...">
-                        <button type="submit">Подписаться</button>
+                        <button class="footer__subscribe-btn" type="submit">Подписаться</button>
                     </form>
                 </div>
             </div>
             <p class="footer__info">www.slick.com©all right reserve</p>
         </div>
     </footer>
+
+    <dialog class="modal modal__item-add" aria-label="Добавление товара" aria-modal="true">
+        <div class="modal__container">
+            <span>Товар успешно<br>добавлен в корзину</span>
+            <button type="button" class="button modal__button">Продолжить покупки</button>
+            <button type="button" class="modal__close"></button>
+        </div>
+    </dialog>
+    <dialog class="modal modal__subscribe" aria-label="Проверьте ваш e-mail" aria-modal="true">
+        <div class="modal__container">
+            <span>Проверьте ваш email и подтвердите подписку</span>
+            <button type="button" class="modal__close"></button>
+        </div>
+    </dialog>
+    <dialog class="modal modal__error-alert" aria-label="Ошибка" aria-modal="true">
+        <div class="modal__container">
+            <p class="modal__error">Ошибка!</p>
+            <span>Что-то пошло не так. Мы уже знаем о проблеме. Зайдите позже.</span>
+            <button type="button" class="button  modal__button">Продолжить покупки</button>
+            <button type="button" class="modal__close"></button>
+        </div>
+    </dialog>
+    <dialog class="modal modal__order" aria-label="Заказ оформлен" aria-modal="true">
+        <div class="modal__container">
+            <span>Заказ оформлен. Ожидайте звонка</span>
+            <button type="button" class="button  modal__button">Вернуться на главную</button>
+            <button type="button" class="modal__close"></button>
+        </div>
+    </dialog>
+    <script src="js/script.js" defer type="module"></script>
 </body>
 
 </html>
