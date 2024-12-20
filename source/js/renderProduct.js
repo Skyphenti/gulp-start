@@ -1,4 +1,4 @@
-
+'use strict'
 
 export default (products, template, target, isTargetList = false, templateClass = '') => {
 
@@ -42,12 +42,14 @@ export default (products, template, target, isTargetList = false, templateClass 
         priceOldEl.textContent = `${oldPrice} ₽`;
 
         if (status?.length) {
-            itemEl.classList.add('product-card--`${status}`')
+            itemEl.classList.add(`product-card--${status}`)
         }
 
         if(size?.length) {
             itemEl.classList.add('big-card-catalog')
         }
+
+        
 
         fragment.appendChild(itemEl);
     });

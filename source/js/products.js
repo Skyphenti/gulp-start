@@ -1,9 +1,14 @@
+'use strict'
 
 export default [
+    // size - любое непустое значение будет делать карту большой.
+    // status - new - черная лычка, hot - красная. Писать всегда прописными буквами!
+
     {
         id: 1,
         size: 'big',
-        status: "Hot",
+        link: '',
+        status: 'hot',
         image: 'img/1.jpg',
         name: 'Slick formal sneaker shoe',
         price: 2999,
@@ -12,7 +17,8 @@ export default [
 
     {
         id: 2,
-        status: "New",
+        status: "new",
+        link: "",
         image: 'img/1.jpg',
         name: 'Slick sneaker shoe',
         price: 2999,
@@ -21,6 +27,7 @@ export default [
     
     {
         id: 3,
+        link:"",
         image: 'img/1.jpg',
         name: 'Slick canvas shoe',
         price: 2999,
