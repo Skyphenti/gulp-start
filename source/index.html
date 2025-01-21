@@ -54,6 +54,36 @@
                     <img src="img/cart.svg" alt="Иконка корзины">
                     <span class="nav-button__pin">0</span>
                 </button>
+                <div class="main-nav__cart main-nav__cart--active cart ">
+                    <h3 class="cart__title">Корзина Товаров</h3>
+                    <!-- <template> -->
+                        <li class="cart__item">
+                            <a class="cart__item-link" href=""></a>
+                            <div class="cart__item-header">
+                                <img class="cart__item-img" src="" alt="иконка товара">
+                                <h3 class="cart__item-name">Trendy slick pro</h3>
+                            </div>
+                            <div class="cart__item__footer">
+                                <div class="cart__item-count">
+                                    <button class="cart__count-reduce">-</button>
+                                    <span class="cart__count-number">1</span>
+                                    <button class="cart__count-add">+</button>
+                                </div>
+                                <span class="cart__count-price">3999</span>
+                                <button class="cart__item-delete" aria-label="Удалить предмет из корзины">
+                                    <span></span>
+                                </button>
+                            </div> 
+                        </li>
+                    <!-- </template> -->
+                    <div class="cart__total">
+                        <span class="cart__total-description">Итого:</span>
+                        <span class="cart__total-number">5</span>
+                        <span class="cart__total-price">20000</span>
+                    </div>
+                    <button class="button cart__button">Оформить Заказ</button>
+                    <button class="cart__close-button"></button>
+                </div>
                 <div class="nav-button main-nav__nav-burger">
                     <button type="button" class="nav-button__close">
                         <img src="img/icon-cross.svg" alt="Кнопка закрытия меню">
@@ -81,7 +111,7 @@
                 <article class="hero-product hero__hero-product">
                     <div class="hero-product__wrapper">
                         <img class="hero-product__img" src="img/trendy-slick-pro2.png" alt="Trendy slick pro">
-                        <h2 class="hero-product__title">Trendy slick pro</h2>
+                        <h3 class="hero-product__title">Trendy slick pro</h3>
                         <span class="hero-product__price">3999&nbsp;₽</span>
                         <span class="hero-product__price hero-product__price--old">4999&nbsp;₽</span>
                     </div>
@@ -100,7 +130,7 @@
             <div class="container trends__container">
                 <div class="trends__text">
                     <span class="trends__description">Сегодня в тренде</span>
-                    <h2 class="trends__popular">Самые<br>популярные</h2>
+                    <h3 class="trends__popular">Самые<br>популярные</h3>
                     <span class="trends__slogan">Посмотрите, что чаще всего покупают у нас</span>
                     <a href="#" class="trends__button button">Показать все</a>
                 </div>
@@ -110,7 +140,7 @@
                             <div class="trends-card__wrapper">
                                 <img class="trends-card__img" src="img/running-sport-shoe-first.png"
                                     alt="Trendy slick pro">
-                                <h2 class="trends-card__title">Running sport shoe</h2>
+                                <h3 class="trends-card__title">Running sport shoe</h3>
                                 <div class="trends-card__footer">
                                     <span class="trends-card__price">3999&nbsp;₽</span>
                                     <span class="trends-card__price trends-card__price--old">4999&nbsp;₽</span>
@@ -122,7 +152,7 @@
                             <div class="trends-card__wrapper">
                                 <img class="trends-card__img" src="img/running-sport-shoe-second.png"
                                     alt="Trendy slick pro">
-                                <h2 class="trends-card__title">Trendy slick pro</h2>
+                                <h3 class="trends-card__title">Trendy slick pro</h3>
                                 <div class="trends-card__footer">
                                     <span class="trends-card__price">3999&nbsp;₽</span>
                                     <span class="trends-card__price trends-card__price--old">4999&nbsp;₽</span>
@@ -134,7 +164,7 @@
                             <div class="trends-card__wrapper">
                                 <img class="trends-card__img" src="img/running-sport-shoe-third.png"
                                     alt="Trendy slick pro">
-                                <h2 class="trends-card__title">Trendy slick pro</h2>
+                                <h3 class="trends-card__title">Trendy slick pro</h3>
                                 <div class="trends-card__footer">
                                     <span class="trends-card__price">3999&nbsp;₽</span>
                                     <span class="trends-card__price trends-card__price--old">4999&nbsp;₽</span>
@@ -222,7 +252,7 @@
                         <div class="product-card__wrapper">
                             <img class="product-card__img" src="img/slick-formal-sneaker-shoe.png"
                                 alt="Trendy slick pro">
-                            <h2 class="product-card__title"></h2>
+                            <h3 class="product-card__title">1</h3>
                             <a href="#" class="product-card__link"></a>
                             <div class="product-card__footer">
                                 <span class="product-card__price"></span>
@@ -239,7 +269,7 @@
                         <div class="product-card__wrapper">
                             <img class="product-card__img" src="img/slick-sneaker-shoe.png" alt="Trendy slick pro">
                             <a href="#" class="product-card__link"></a>
-                            <h2 class="product-card__title">Slick sneaker shoe</h2>
+                            <h3 class="product-card__title">Slick sneaker shoe</h3>
                             <div class="product-card__footer">
                                 <span class="product-card__price">3999&nbsp;₽</span>
                                 <span class="product-card__price product-card__price--old">4999&nbsp;₽</span>
@@ -251,7 +281,7 @@
                     <article class="product-card best-selling__product-card">
                         <div class="product-card__wrapper">
                             <img class="product-card__img" src="img/slick-canvas-shoe.png" alt="Trendy slick pro">
-                            <h2 class="product-card__title">Slick canvas shoe</h2>
+                            <h3 class="product-card__title">Slick canvas shoe</h3>
                             <div class="product-card__footer">
                                 <span class="product-card__price">3999&nbsp;₽</span>
                                 <span class="product-card__price product-card__price--old">4999&nbsp;₽</span>
@@ -338,8 +368,9 @@
             <p class="footer__info">www.slick.com©all right reserve</p>
         </div>
     </footer>
-
+    
     <dialog class="modal modal__item-add" aria-label="Добавление товара" aria-modal="true">
+        <div class="modal__overlay"></div>
         <div class="modal__container">
             <span>Товар успешно<br>добавлен в корзину</span>
             <button type="button" class="button modal__button">Продолжить покупки</button>
@@ -347,12 +378,14 @@
         </div>
     </dialog>
     <dialog class="modal modal__subscribe" aria-label="Проверьте ваш e-mail" aria-modal="true">
+        <div class="modal__overlay"></div>
         <div class="modal__container">
             <span>Проверьте ваш email и подтвердите подписку</span>
             <button type="button" class="modal__close"></button>
         </div>
     </dialog>
     <dialog class="modal modal__error-alert" aria-label="Ошибка" aria-modal="true">
+        <div class="modal__overlay"></div>
         <div class="modal__container">
             <p class="modal__error">Ошибка!</p>
             <span>Что-то пошло не так. Мы уже знаем о проблеме. Зайдите позже.</span>
@@ -361,6 +394,7 @@
         </div>
     </dialog>
     <dialog class="modal modal__order" aria-label="Заказ оформлен" aria-modal="true">
+        <div class="modal__overlay"></div>
         <div class="modal__container">
             <span>Заказ оформлен. Ожидайте звонка</span>
             <button type="button" class="button  modal__button">Вернуться на главную</button>

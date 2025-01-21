@@ -1,11 +1,13 @@
 'use strict'
 
-import './main.js';
 import renderProduct from './renderProduct.js';
-import products from './products.js'
+import { fetchParams }  from './fetch.js';
+import './modals.js';
 
 const catalogList = document.querySelector('.catalog__list')
 
 const catalogItemTemplate = document.querySelector('#product').content;
 
-renderProduct(products, catalogItemTemplate, catalogList, true, "catalog__item" )
+const dataCurrency = fetchParams('https://zsa-studio.ru/catalog.php');
+dataCurrency.then((products) => renderProduct(products, catalogItemTemplate, catalogList, true, "catalog__item" ));
+

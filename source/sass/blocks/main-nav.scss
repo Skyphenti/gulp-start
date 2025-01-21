@@ -161,4 +161,21 @@
         top: 14px;
         right: 8px;
     }
+
+    &__cart {
+        position: absolute;
+        top: 100px;
+        right: 100px;
+        min-width: 300px;
+        display: none;
+        
+
+        @media (min-width: 768px)  {
+            min-width:  614px;
+        }
+
+        &--active {
+            display: block;
+        }
+    }
 }

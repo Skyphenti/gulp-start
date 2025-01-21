@@ -5,6 +5,7 @@ export default (products, template, target, isTargetList = false, templateClass 
     const fragment = document.createDocumentFragment();
 
     let productEl = template.querySelector('.product-card');
+    console.log(productEl)
 
 
     if (isTargetList) {
@@ -28,7 +29,7 @@ export default (products, template, target, isTargetList = false, templateClass 
         const priceEl = itemEl.querySelector(".product-card__price");
         const priceOldEl = itemEl.querySelector(".product-card__price--old");
         const button = itemEl.querySelector(".product-card__add-button");
-        const { id, name, image, link, price, oldPrice, status, size } = product;
+        const { id, name, image, link, price, oldPrice, status, isBig } = product;
 
         // button.addEventListener(click, () => {
         //     addProductToCart(product, true);
@@ -45,11 +46,11 @@ export default (products, template, target, isTargetList = false, templateClass 
             itemEl.classList.add(`product-card--${status}`)
         }
 
-        if(size?.length) {
+        if(isBig) {
             itemEl.classList.add('big-card-catalog')
         }
 
-        
+         
 
         fragment.appendChild(itemEl);
     });
